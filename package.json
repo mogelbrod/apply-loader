@@ -1,0 +1,24 @@
+{
+  "name": "apply-loader",
+  "version": "0.1.0",
+  "description": "Apply loader for webpack",
+  "main": "index.js",
+  "author": {
+    "name": "Victor Hallberg",
+    "email": "victor@hallberg.cc",
+    "url": "http://hallberg.cc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mogelbrod/apply-loader"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "loader-utils": "~0.2.6"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "apply"
+  ]
+}
