@@ -15,8 +15,8 @@ require("apply?args[]=1&args[]=2!functionReturningLoader");
 // => sourceFn({a: 1, b:2})
 require("apply?{obj: {a: 1, b: 2}}!functionReturningLoader");
 
-// Call with an object/array declared in the webpack.config (.customConfig in this case)
-// => sourceFn(require('webpack.config').key)
+// Call with an object/array declared in the webpack.config
+// => sourceFn(require('webpack.config').customConfig)
 require("apply?config=customConfig!functionReturningLoader");
 ```
 
