@@ -24,6 +24,6 @@ module.exports = function applyLoader(source) {
   }
 
   var json = JSON.stringify(args);
-  source += "\n\nmodule.exports = module.exports.apply(module, " + json + ")";
+  source += "\n\nexports['default'] = exports['default'].apply(module, " + json + ")";
   return source;
 };
