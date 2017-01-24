@@ -1,13 +1,14 @@
-var loaderUtils = require('loader-utils');
+var loaderUtils = require("loader-utils");
 
-module.exports = function applyLoader(source) {
+module.exports = function() {}
+module.exports.pitch = function applyLoader(remainingRequest) {
   var query = loaderUtils.parseQuery(this.query);
   var args = [];
 
   this.cacheable && this.cacheable();
 
   // apply?config=key => sourceFn(require('webpack.config').key)
-  if (typeof query.config === 'string') {
+  if (typeof query.config === "string") {
     if (!(query.config in this.options))
       throw new Error("apply-loader: '"+query.config+"' property not present in webpack config");
     args.push(this.options[query.config]);
@@ -23,7 +24,12 @@ module.exports = function applyLoader(source) {
     args.push.apply(args, query.args);
   }
 
-  var json = JSON.stringify(args);
-  source += "\n\nmodule.exports = module.exports.apply(module, " + json + ")";
-  return source;
+  return [
+    "var req = require(",
+    JSON.stringify("!!" + remainingRequest),
+    ");\n",
+    "module.exports = (req['default'] || req).apply(req, ",
+    JSON.stringify(args),
+    ")"
+  ].join("")
 };
