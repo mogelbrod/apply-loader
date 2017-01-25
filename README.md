@@ -4,7 +4,9 @@
 
 [Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
 
-The `apply` loader can be used to execute a JavaScript function exported, optionally with arguments, and export the returned value.
+The `apply` loader can be used to execute an exported JavaScript function (optionally with arguments) and export the returned value.
+
+It will attempt to call the `default` export if defined, falling back to the basic export (i.e. `module.exports`).
 
 ``` javascript
 // Call with multiple arguments
