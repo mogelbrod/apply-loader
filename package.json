@@ -1,6 +1,6 @@
 {
   "name": "apply-loader",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Apply loader for webpack",
   "main": "index.js",
   "author": {
