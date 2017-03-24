@@ -1,24 +1,91 @@
 {
-  "name": "apply-loader",
-  "version": "1.0.0",
-  "description": "Apply loader for webpack",
-  "main": "index.js",
+  "_args": [
+    [
+      {
+        "raw": "apply-loader",
+        "scope": null,
+        "escapedName": "apply-loader",
+        "name": "apply-loader",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/ish-/Documents/DEV/mm-web"
+    ]
+  ],
+  "_from": "apply-loader@latest",
+  "_id": "apply-loader@1.0.0",
+  "_inCache": true,
+  "_location": "/apply-loader",
+  "_nodeVersion": "7.2.1",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/apply-loader-1.0.0.tgz_1485360869540_0.09120802441611886"
+  },
+  "_npmUser": {
+    "name": "mogelbrod",
+    "email": "victor@hallberg.cc"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "apply-loader",
+    "scope": null,
+    "escapedName": "apply-loader",
+    "name": "apply-loader",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/apply-loader/-/apply-loader-1.0.0.tgz",
+  "_shasum": "f14e9f0d4b031ddf27b8a017083559ff1db5ad3e",
+  "_shrinkwrap": null,
+  "_spec": "apply-loader",
+  "_where": "/Users/ish-/Documents/DEV/mm-web",
   "author": {
     "name": "Victor Hallberg",
     "email": "victor@hallberg.cc",
     "url": "http://hallberg.cc/"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mogelbrod/apply-loader"
+  "bugs": {
+    "url": "https://github.com/mogelbrod/apply-loader/issues"
   },
-  "license": "MIT",
   "dependencies": {
-    "loader-utils": "~0.2.6"
+    "loader-utils": "^1.1.0"
   },
+  "description": "Apply loader for webpack",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "f14e9f0d4b031ddf27b8a017083559ff1db5ad3e",
+    "tarball": "https://registry.npmjs.org/apply-loader/-/apply-loader-1.0.0.tgz"
+  },
+  "gitHead": "aabe0f13e584b50114550b212fef7a267ffe3ae3",
+  "homepage": "https://github.com/mogelbrod/apply-loader#readme",
   "keywords": [
     "webpack",
     "loader",
     "apply"
-  ]
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "mogelbrod",
+      "email": "victor@hallberg.cc"
+    }
+  ],
+  "name": "apply-loader",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mogelbrod/apply-loader.git"
+  },
+  "scripts": {},
+  "version": "1.1.0"
 }
