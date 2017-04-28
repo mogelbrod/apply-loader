@@ -22,6 +22,22 @@ require("apply?{obj: {a: 1, b: 2}}!functionReturningLoader");
 require("apply?config=customConfig!functionReturningLoader");
 ```
 
+## Webpack 2 configuration
+
+``` javascript
+use: [{
+  loader: 'apply-loader',
+  options: {
+    // => sourceFn({a: 1}, true)
+    args: [ {a: 1}, true ]
+    // => sourceFn({a: 1})
+    obj: {a: 1}
+    // => sourceFn(require('webpack.config').customConfig)
+    config: 'customConfig'
+  }
+}
+```
+
 ## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)

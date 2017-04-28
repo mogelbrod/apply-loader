@@ -8,13 +8,23 @@
     "email": "victor@hallberg.cc",
     "url": "http://hallberg.cc/"
   },
+  "maintainers": [
+    {
+      "name": "mogelbrod",
+      "email": "victor@hallberg.cc"
+    }
+  ],
+  "homepage": "https://github.com/mogelbrod/apply-loader#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/mogelbrod/apply-loader"
   },
+  "bugs": {
+    "url": "https://github.com/mogelbrod/apply-loader/issues"
+  },
   "license": "MIT",
   "dependencies": {
-    "loader-utils": "~0.2.6"
+    "loader-utils": "^1.1.0"
   },
   "keywords": [
     "webpack",
